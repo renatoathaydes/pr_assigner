@@ -1,5 +1,5 @@
 import 'package:flutter_web/material.dart';
-import 'package:gh_review/views/pull_requests.dart';
+import 'package:pr_assigner/views/pull_requests.dart';
 
 void main() => runApp(MyApp());
 
@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'PR Manager',
+      title: 'PR Assigner',
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
         fontFamily: 'Arial',
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
           body1: TextStyle(fontSize: 14.0, fontFamily: 'Arial'),
         ),
       ),
-      home: PullRequests(title: 'PR Manager'),
+      home: PullRequests(title: 'PR Assigner'),
     );
   }
 }

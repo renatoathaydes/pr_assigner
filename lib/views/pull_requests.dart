@@ -2,8 +2,8 @@ import 'dart:convert' as convert;
 
 import 'package:flutter_web/material.dart';
 import 'package:flutter_web/widgets.dart';
-import 'package:gh_review/data.dart';
-import 'package:gh_review/views/selector.dart';
+import 'package:pr_assigner/data.dart';
+import 'package:pr_assigner/views/selector.dart';
 
 const githubAccept = 'application/vnd.github.v3+json';
 
