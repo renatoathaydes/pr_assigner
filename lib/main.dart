@@ -1,10 +1,10 @@
 import 'package:flutter_web/material.dart';
-import 'package:pr_assigner/views/pull_requests.dart';
 
-void main() => runApp(MyApp());
+import 'src/views/selector.dart';
 
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+void main() => runApp(PrAssigner());
+
+class PrAssigner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
           body1: TextStyle(fontSize: 14.0, fontFamily: 'Arial'),
         ),
       ),
-      home: PullRequests(title: 'PR Assigner'),
+      home: RepoSelector(),
     );
   }
 }
