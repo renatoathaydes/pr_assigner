@@ -8,14 +8,10 @@ import 'repo.dart' as repo;
 const githubAccept = 'application/vnd.github.v3+json';
 
 class GitHubRepo implements repo.Repository {
-  final String owner;
-  final String project;
-
-  GitHubRepo(this.owner, this.project);
-
   @override
-  Future<List<PullRequest>> fetchPullRequests() => fetchGitHubData(
-      Uri.parse("https://api.github.com/repos/$owner/$project/pulls"));
+  Future<List<PullRequest>> fetchPullRequests(String owner, String project) =>
+      fetchGitHubData(
+          Uri.parse("https://api.github.com/repos/$owner/$project/pulls"));
 }
 
 Future<List<PullRequest>> fetchGitHubData(Uri uri) async {

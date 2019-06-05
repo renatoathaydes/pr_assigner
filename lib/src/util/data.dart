@@ -13,10 +13,3 @@ class PullRequest {
         date = json["created_at"],
         uri = Uri.parse(json["url"]);
 }
-
-@immutable
-class Repository {
-  final Uri uri;
-
-  Repository([this.uri]);
-}
